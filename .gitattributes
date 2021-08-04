@@ -1,4 +1,6 @@
 * text=auto eol=lf
 *.json binary
+*.txt binary
+*.zs binary
 *.xsd binary
 *.config binary
