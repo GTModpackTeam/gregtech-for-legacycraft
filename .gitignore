@@ -1,5 +1,8 @@
 # Folder
 .mixin.out
+asm
+blueprints
+contentScripts
 journeymap
 llibrary
 local
@@ -18,8 +21,6 @@ optionsof.txt
 optionsshaders.txt
 LFC_Replacer-*.jar
 replace*
-NBTEdit.log
-NBTEdit.log.lck
 servers.dat
 minetweaker.log
 asm/*
