@@ -3,6 +3,12 @@ import mods.extraUtils.QED;
 
 
 
+// --- Ore Dictionary
+var dirt = <ore:dirt>;
+dirt.add(<minecraft:dirt:1>);
+
+
+
 // --- Recipe Remove
 recipes.remove(<minecraft:comparator>);
 recipes.removeShaped(<minecraft:clock>, [

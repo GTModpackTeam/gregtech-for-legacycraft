@@ -9,7 +9,7 @@ import mods.ic2.ThermalCentrifuge;
 
 
 
-// --- Recipe Remove
+// --- Remove Shaped
 recipes.removeShapeless(<minecraft:iron_ingot> * 8, [<ore:craftingRawMachineTier01>]);
 recipes.removeShaped(<IC2:blockGenerator>, [
     [null, <ore:calclavia:BATTERY>, null],
@@ -49,6 +49,14 @@ recipes.remove(<IC2:itemPartCircuitAdv>);
 recipes.remove(<IC2:itemCable:3>);
 recipes.remove(<IC2:itemCable:6>);
 recipes.remove(<IC2:upgradeModule>);
+recipes.remove(<IC2:reactorReflector:1>);
+recipes.remove(<IC2:reactorReflectorThick:1>);
+recipes.remove(<gregtech_addon:iridium_neutronreflector>);
+
+
+
+// --- Remove Shapeless
+recipes.removeShapeless(<minecraft:iron_ingot> * 8, [<ore:craftingRawMachineTier01>]);
 
 
 
@@ -93,3 +101,24 @@ recipes.addShaped(<gregtech_addon:wrench_advanced:127>, [
     [<ore:plateTungstenSteel>, <gregtech_addon:electric_wrench:*>.noReturn(), <ore:plateTungstenSteel>],
     [<ore:circuitBasic>, <ore:batteryLithium>, <ore:circuitBasic>]
 ]);
+recipes.addShaped(<IC2:reactorReflector:1>, [
+    [<ore:dustTin>, <ore:dustCoal>, <ore:dustTin>],
+    [<ore:dustCoal>, <ore:plateCopper>, <ore:dustCoal>],
+    [<ore:dustTin>, <ore:dustCoal>, <ore:dustTin>]
+]);
+recipes.addShaped(<IC2:reactorReflectorThick:1>, [
+    [<ore:plateCopper>, <IC2:reactorReflector:1>, <ore:plateCopper>],
+    [<IC2:reactorReflector:1>, <ore:plateCopper>, <IC2:reactorReflector:1>],
+    [<ore:plateCopper>, <IC2:reactorReflector:1>, <ore:plateCopper>]
+]);
+recipes.addShaped(<gregtech_addon:iridium_neutronreflector>, [
+    [<IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>],
+    [<IC2:reactorReflectorThick:1>, <ore:plateAlloyIridium>, <IC2:reactorReflectorThick:1>],
+    [<IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>]
+]);
+
+
+
+// --- Recipe Shapeless
+recipes.addShapeless(<IC2:reactorReflector:1>, [<IC2:reactorReflector>]);
+recipes.addShapeless(<IC2:reactorReflectorThick:1>, [<IC2:reactorReflectorThick>]);
